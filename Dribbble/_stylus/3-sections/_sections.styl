@@ -1,0 +1,348 @@
+.active
+    svg
+        path
+            fill: white
+img
+    width: 100%
+
+.is-fav
+    color: #ec4989
+
+.hide-meta
+    .tools
+        display: none !important
+    .attribution
+        display: none !important
+
+.large-meta
+    li.group
+        width: 420px !important
+        .dribbble-over
+            strong
+                font-size: 16px !important
+                margin-bottom: 10px !important
+            .comment
+                font-size: 14px !important
+                line-height: 1.4em
+            .time
+                font-size: 13px !important
+
+.wrap
+    background: #f4f4f4
+    .fulltabs
+        padding: 0 30px
+        height: 50px
+        border-bottom: 1px solid #e5e5e5
+        position: relative
+        background: white
+        .shot-menu
+            display: flex
+            justify-content: center
+            > li
+                padding-right: 33px
+                position: relative
+                > a
+                    display: flex
+                    position: relative
+                    color: #444
+                    line-height: 50px
+                    &:after
+                        content: ''
+                        height: 100%
+                        width: 18px
+                        position: absolute
+                        background: url(../img/arrow-right.png) no-repeat center
+                        transform: rotate(90deg)
+                        background-size: 5px 8px
+                .sub
+                    display: none
+                    width: 200px
+                    font-size: 13px
+                    background: #fbfbfb
+                    box-shadow: 1px 2px 2px rgba(0,0,0,0.2)
+                    position: absolute
+                    padding-bottom: 10px
+                    border-bottom-left-radius: 4px
+                    border-bottom-right-radius: 4px
+                    top: 50px
+                    left: -18px
+                    z-index: 999
+                    a
+                        font-size: 13px
+                        padding: 5px 20px
+                        display: block
+                        &:hover
+                            color: #444
+                            background: #eee
+                            opacity: 0.75
+        .screenshot-actions
+            position: absolute
+            top: 7px
+            right: 20px
+            padding: 10px
+            cursor: pointer
+            border-top-left-radius: 5px
+            border-top-right-radius: 5px
+            z-index: 9
+            &:hover
+                background: #444
+                .actions-list
+                    display: block
+                .action-grid
+                    background-position: bottom
+            .action-grid
+                display: block
+                height: 16px
+                width: 16px
+                background: url(../img/shots.png) no-repeat
+                background-size: cover
+            .actions-list
+                background: #444
+                display: none
+                position: absolute
+                width: 190px
+                height: 61px
+                padding: 10px 15px
+                border-radius: 5px
+                border-top-right-radius: 0
+                right: 0
+                .shot-display
+                    padding: 5 15px
+                    h3
+                        font-size: 12px
+                        text-transform: uppercase
+                        color: #ccc
+                    .large-small
+                        display: flex
+                        justify-content: space-between
+                        li
+                            a
+                                width: 42px
+                                height: 42px
+                                background: #505050
+                                border-radius: 2px
+                                margin-top: 5px
+                                display: block
+                                &:hover
+                                    background: #999
+    #wap-inner
+        padding: 30px 30px 40px 30px
+        #content
+            #main.main-full
+                display: flex
+                justify-content: center
+                ul.dribbbles
+                    margin: 0 auto
+                    display: flex
+                    flex-wrap: wrap
+                    li.group
+                        margin: 0 15px 30px 15px
+                        width: 220px
+                        &:hover
+                            .dribbble-over
+                                opacity: 1 !important
+                            .badge-link
+                                opacity: 1 !important
+                        .dribbble
+                            background: white
+                            box-shadow: 0 1px 2px rgba(0,0,0,0.07)
+                            border-radius: 2px
+                            .dribbble-shot
+                                padding: 10px
+                                .dribbble-img
+                                    position: relative
+                                    .dribbble-over
+                                        position: absolute
+                                        padding: 20px
+                                        top: 0
+                                        left: 0
+                                        bottom: 0
+                                        right: 0
+                                        background: rgba(255,255,255,0.96)
+                                        color: #888
+                                        opacity: 0
+                                        transition: opacity 0.2s ease
+                                        strong
+                                            display: block
+                                            color: #444
+                                            font-size: 14px
+                                            font-weight: 500
+                                            margin-bottom: 4px
+                                        .comment
+                                            font-size: 11px
+                                            margin-bottom: 10px
+                                            overflow: hidden
+                                            display: -webkit-box
+                                            line-height: 1.6
+                                            max-height: 100px
+                                            -webkit-line-clamp: 4
+                                            -webkit-box-orient: vertical
+                                        .time
+                                            position: absolute
+                                            bottom: 0
+                                            left: 20px
+                                            font-size: 12px
+                                .tools
+                                    margin-top: 10px
+                                    display: flex
+                                    justify-content: flex-end
+                                    li
+                                        margin-left: 12px
+                                        color: #bbbbbb
+                                        i
+                                            font-size: 13px
+                                            margin-right: 2px
+                                        span, a
+                                            font-size: 11px
+                                    .extra
+                                        width: 16px
+                                        height: 16px
+                                        &:first-child
+                                            margin-left: 0
+                                    .views
+                                        flex-grow: 2
+                                        text-align: right
+                        .attribution
+                            display: flex
+                            padding-left: 10px
+                            margin-top: 10px
+                            a, span
+                                font-size: 13px
+                            a:first-child
+                                color: #3a8bbb
+                                &:hover
+                                    color: #1e6189
+                            .attribution__avatar
+                                height: 16px
+                                width: 16px
+                                border-radius: 50%
+                                float: left
+                                margin: 0 10px
+                            .badge-link
+                                padding: 0px 3px 2px 3px
+                                text-transform: uppercase
+                                font-weight: bold
+                                background-color: #ccc
+                                transition: opacity 0.2s ease
+                                color: white
+                                border-radius: 2px
+                                margin-left: 10px
+                                opacity: 0
+                                transition: opacity 0.2s ease
+                                &:hover
+                                    background: #6cc
+                                .badge
+                                    font-size: 10px
+@media screen and (min-width: 891px)
+    .shot-menu
+        .shot-more
+            &:hover
+                .sub
+                    display: block !important
+
+// responsive screen
+@media screen and (max-width: 2295px)
+    .dribbbles
+        max-width 1800px
+
+@media screen and (max-width: 2059px)
+    .dribbbles
+        max-width 1750px
+
+@media screen and (max-width: 1809px)
+    .dribbbles
+        max-width 1500px
+
+@media screen and (max-width: 1559px)
+    .dribbbles
+        max-width 1250px
+
+@media screen and (max-width: 1309px)
+    .dribbbles
+        max-width 1000px
+
+@media screen and (max-width: 1059px)
+    .dribbbles
+        max-width 750px
+
+@media screen and (max-width: 809px)
+    .fulltabs
+        position: relative !important
+        height: 40px !important
+        .shot-menu
+            > li
+                position: static !important
+                .sub
+                    width: auto !important
+                    top: 40px !important
+                    left: 0 !important
+                    right: 0
+                    border-radius: 0 !important
+                    li
+                        a
+                            line-height: normal !important
+                            padding: 5 20px !important
+        .screenshot-actions
+            top: 2px !important
+        .shot-more
+            a
+                line-height: 40px !important
+    .dribbbles
+        max-width: 500px
+
+
+@media screen and (max-width: 560px)
+    #wap-inner
+        padding: 15px !important
+        .dribbbles
+            max-width: none
+            justify-content: space-between
+            li.group
+                width: 45% !important
+                margin: 0 5px 8px 5px !important
+                .dribbble-over
+                    display: none !important
+                .tools
+                    display: none !important
+                .attribution
+                    display: none !important
+
+// large meta screen
+@media screen and (max-width: 3000px)
+    .large-meta
+        max-width 2250px !important
+
+@media screen and (max-width: 2309px)
+    .large-meta
+        max-width 1800px !important
+
+@media screen and (max-width: 1859px)
+    .large-meta
+        max-width 1350px !important
+
+@media screen and (max-width: 1409px)
+    .large-meta
+        max-width 900px !important
+
+@media screen and (max-width: 959px)
+    .large-meta
+        max-width 450px !important
+
+@media screen and (max-width: 450px)
+    .large-meta
+        max-width none !important
+        width: 100% !important
+
+
+// ipad screen
+@media only screen and (width: 768px)
+    .dribbbles
+        max-width 745px
+        li.group
+            margin: 0 8px 30px 8px !important
+
+@media only screen and (width: 1024px)
+    .dribbbles
+        max-width 964px
+    li.group
+        margin: 0 10px 30px 10px !important

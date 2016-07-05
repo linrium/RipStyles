@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="js/tooltipster.bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="https://use.fontawesome.com/5917a77811.js"></script>
+    <script type="text/javascript" src="js/tooltipster.bundle.min.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="img/fav/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="img/fav/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="img/fav/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="img/fav/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="img/fav/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="img/fav/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="img/fav/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon-180x180.png"/>
+    <link rel="icon" type="image/png" href="img/fav/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="img/fav/android-chrome-192x192.png" sizes="192x192"/>
+    <link rel="icon" type="image/png" href="img/fav/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="img/fav/favicon-16x16.png" sizes="16x16"/>
+    <link rel="manifest" href="img/fav/manifest.json"/>
+    <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="msapplication-TileColor" content="#da532c"/>
+    <meta name="msapplication-TileImage" content="img/fav/mstile-144x144.png"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <title>Hello world</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-inner">
+        <div id="toggle-nav"><span></span></div>
+        <div id="nav-wrapper">
+          <div id="logo" class="nav__center"><a href="#"><img src="img/logo.png" alt="logo"/></a></div>
+          <ul id="nav" class="nav__center">
+            <li id="t-search">
+              <form id="search"><i class="fa fa-search"></i>
+                <input type="search" placeholder="Search" class="search-text"/>
+              </form>
+            </li>
+            <li id="t-home"><a href="#">Home</a></li>
+            <li><a href="#">Shots</a>
+              <ul class="tabs">
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Recent</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Debuts</a></li>
+                <li><a href="#">Playoffs</a></li>
+                <li><a href="#">Animated GIFs</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Designers</a>
+              <ul class="tabs">
+                <li><a href="#">All</a></li>
+                <li><a href="#">For Hire</a></li>
+                <li class="separate"><a href="#">Top Skills & Locations</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Cities</a></li>
+                <li><a href="#">Countries</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Teams</a>
+              <ul class="tabs">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Hiring Designers</a></li>
+                <li><a href="#">Designers Teams for Hire</a></li>
+                <li class="separate"><a href="#">Add Your Designer Team</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Stories</a>
+              <ul class="tabs">
+                <li><a href="#">Lastest Stories</a></li>
+                <li class="separate"><a href="#">Timeout: Nikhil Vootkur</a></li>
+                <li><a href="#">Shot Block: Noodles</a></li>
+                <li><a href="#">Timeout: Dave Chenell</a></li>
+                <li><a href="#">Weekly Replay: Jun 20</a></li>
+                <li><a href="#">Shot Block: ARTCRANK</a></li>
+                <li class="separate"><a href="#">Subscribe</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Meetups</a>
+              <ul class="tabs">
+                <li><a href="#">Meetups</a></li>
+                <li class="separate"><a href="#">Host a Meetup</a></li>
+              </ul>
+            </li>
+            <li id="t-shop"><a href="#">Shop</a>
+              <ul class="tabs">
+                <li><a href="#">Goods by Designers</a></li>
+                <li><a href="#">Deals for Designers</a></li>
+                <li class="separate"><a href="#">Deals for Designers</a></li>
+              </ul>
+            </li>
+            <li class="more"><a href="http://google.com" class="more-item">Jobs</a>
+              <ul class="tabs">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Remote / Anywhere</a></li>
+                <li><a href="#">@ Teams </a></li>
+                <li class="separate"><a href="#">Post a Job</a></li>
+              </ul>
+            </li>
+            <li id="t-more" class="more"><a href="http://google.com" class="bull">&bull; &bull; &bull;</a><a href="#" class="more-item">More</a>
+              <ul class="tabs">
+                <li><a href="#">Highlights</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Buckets</a></li>
+                <li><a href="#">Colors</a></li>
+                <li><a href="#">Tags</a></li>
+                <li class="separate"><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Podcast</a></li>
+                <li class="separate"><a href="#">Twitter</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Integrations</a></li>
+                <li class="separate"><a href="#">Support</a></li>
+              </ul>
+            </li>
+            <li id="t-profile" class="more"><a href="#" class="avatar"><img src="img/avatar.jpg" alt="avatar"/><span class="name">lynkxyz</span></a>
+              <ul class="tabs">
+                <li><a href="#">lynkxyz</a></li>
+                <li class="gopro separate"><a href="#">Go Pro</a></li>
+                <li class="separate"><a href="#">Account Settings</a></li>
+                <li><a href="#">Sign Out</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="wrap">
+      <div class="fulltabs">
+        <ul class="shot-menu">
+          <li class="shot-more"><a href="">Popular</a>
+            <ul class="sub">
+              <li><a href="">Recent</a></li>
+              <li><a href="">Most Viewed</a></li>
+              <li><a href="">Most Commented</a></li>
+            </ul>
+          </li>
+          <li class="shot-more"><a href="">Shots</a>
+            <ul class="sub">
+              <li><a href="">Debuts</a></li>
+              <li><a href="">Team Shots</a></li>
+              <li><a href="">Playoffs</a></li>
+              <li><a href="">Rebounds</a></li>
+              <li><a href="">Animated GIFs</a></li>
+              <li><a href="">Shots with Attachments</a></li>
+            </ul>
+          </li>
+          <li class="shot-more"><a href="">Now</a>
+            <ul class="sub">
+              <li><a href="">This Past Week</a></li>
+              <li><a href="">This Past Month</a></li>
+              <li><a href="">This Past Year</a></li>
+              <li><a href="">All Time</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="screenshot-actions"><span class="action-grid"></span>
+          <ul class="actions-list">
+            <li class="shot-display">
+              <h3>Display Options</h3>
+              <ul class="large-small">
+                <li title="Small with info" rel="tipsy" data-tipsy-class="tipsy-alt" original-title="" class="small-with-meta active"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveaspectratio="xMidYMid" width="42" height="42" viewbox="0 0 72 72">
+                      <path d="M48.992,53.0045 L23.009,53.0045 C21.358,53.0045 20.01,51.6595 20.01,50.0035 L20.01,21.9965 C20.01,20.3375 21.358,18.9955 23.009,18.9955 L48.992,18.9955 C50.649,18.9955 51.99,20.3375 51.99,21.9965 L51.99,50.0035 C51.99,51.6595 50.649,53.0045 48.992,53.0045 L48.992,53.0045 L48.992,53.0045 Z M27.989,47.9995 L43.989,47.9995 C45.094,47.9995 45.989,47.1045 45.989,45.9995 C45.989,44.8945 45.094,43.9995 43.989,43.9995 L27.989,43.9995 C26.884,43.9995 25.989,44.8945 25.989,45.9995 C25.989,47.1045 26.884,47.9995 27.989,47.9995 L27.989,47.9995 L27.989,47.9995 Z M45.993,24.9965 L26.008,24.9965 L26.008,39.0025 L45.993,39.0025 L45.993,24.9965 L45.993,24.9965 Z" fill="#333333"></path>
+                    </svg></a></li>
+                <li title="Large with info" rel="tipsy" data-tipsy-class="tipsy-alt" original-title="" class="large-with-meta"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveaspectratio="xMidYMid" width="42" height="42" viewbox="0 0 72 72">
+                      <path d="M56.992,61.0045 L15.009,61.0045 C13.358,61.0045 12.01,59.6595 12.01,58.0035 L12.01,13.9965 C12.01,12.3375 13.358,10.9955 15.009,10.9955 L56.992,10.9955 C58.649,10.9955 59.99,12.3375 59.99,13.9965 L59.99,58.0035 C59.99,59.6595 58.649,61.0045 56.992,61.0045 L56.992,61.0045 Z M19.989,55.9995 L51.989,55.9995 C53.094,55.9995 53.989,55.1045 53.989,53.9995 C53.989,52.8945 53.094,51.9995 51.989,51.9995 L19.989,51.9995 C18.884,51.9995 17.989,52.8945 17.989,53.9995 C17.989,55.1045 18.884,55.9995 19.989,55.9995 L19.989,55.9995 Z M53.993,16.9965 L18.008,16.9965 L18.008,47.0025 L53.993,47.0025 L53.993,16.9965 L53.993,16.9965 Z" fill="#333333"></path>
+                    </svg></a></li>
+                <li title="Small without info" rel="tipsy" data-tipsy-class="tipsy-alt" original-title="" class="small-without-meta"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveaspectratio="xMidYMid" width="42" height="42" viewbox="0 0 72 72">
+                      <path d="M48.992,49.0045 L23.009,49.0045 C21.358,49.0045 20.01,47.6595 20.01,46.0035 L20.01,25.9965 C20.01,24.3375 21.358,22.9955 23.009,22.9955 L48.992,22.9955 C50.649,22.9955 51.99,24.3375 51.99,25.9965 L51.99,46.0035 C51.99,47.6595 50.649,49.0045 48.992,49.0045 L48.992,49.0045 Z M45.993,28.9965 L26.008,28.9965 L26.008,43.0025 L45.993,43.0025 L45.993,28.9965 L45.993,28.9965 Z" fill="#333333"></path>
+                    </svg></a></li>
+                <li title="Large without info" rel="tipsy" data-tipsy-class="tipsy-alt" original-title="" class="large-without-meta"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveaspectratio="xMidYMid" width="42" height="42" viewbox="0 0 72 72">
+                      <path d="M56.992,57.0045 L15.009,57.0045 C13.358,57.0045 12.01,55.6595 12.01,54.0035 L12.01,17.9965 C12.01,16.3375 13.358,14.9955 15.009,14.9955 L56.992,14.9955 C58.649,14.9955 59.99,16.3375 59.99,17.9965 L59.99,54.0035 C59.99,55.6595 58.649,57.0045 56.992,57.0045 L56.992,57.0045 Z M53.993,20.9965 L18.008,20.9965 L18.008,51.0025 L53.993,51.0025 L53.993,20.9965 L53.993,20.9965 Z" fill="#333333"></path>
+                    </svg></a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="wap-inner">
+        <div id="content">
+          <div id="main" class="main-full">
+            <ul class="dribbbles">
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/1.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Hard days night</strong><em class="time">about 13 hours ago</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">R A D I O P<img src="./img/avatar/1.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/2.png" alt=""/></a><a href="" class="dribbble-over"><strong>Fursan Travel</strong><span class="comment"> New refreshing look approved by client for my friends @Balkan Brothers First really challenging project that ended up better than we expected :)</span><em class="time">about 13 hours ago</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>3,886</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>9</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">260</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Charlie Isslander<img src="./img/avatar/2.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Team</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/3.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Haters Gonna Hate</strong><span class="comment"> Have a nice week! ;)</span><em class="time">about 13 hours ago</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Dmitry Stolz<img src="./img/avatar/3.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/4.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Growlithe</strong><span class="comment"> This loyal fire Pokémon comes bounding into our 20 year anniversary collection!</span><em class="time">about 13 hours ago</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">MUTI<img src="./img/avatar/4.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/5.png" alt=""/></a><a href="" class="dribbble-over"><strong>VROOM</strong><span class="comment"> Custom type redesign for VROOM, which is a platform who buy and sell cars based in New York and operating in the US. We went for a simple yet effective type work since the name pretty much suggest where it is all about.</span><em class="time">about 13 hours ago</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Paul von Excite<img src="./img/avatar/5.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/6.gif" alt=""/></a><a href="" class="dribbble-over"><strong>Submarine</strong><span class="comment"> This little guy is exploring the ocean. Perhaps, he will find some treasures soon!</span><em class="time">about 13 hours ago</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Dmitrij<img src="./img/avatar/6.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/7.png" alt=""/></a><a href="" class="dribbble-over"><strong>F***K U Dance</strong><span class="comment"> This is what happen when you have 2 hours off and nothing better to do.</span><em class="time">about 13 hours ago</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Emanuele Colombo<img src="./img/avatar/7.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/8.gif" alt=""/></a><a href="" class="dribbble-over"><strong>I Design With Code</strong><span class="comment"> An SVG animation for my site. Inspired by the wonderfully playful Creogram Check out the live SVG on CodePen here</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Chris Gannon<img src="./img/avatar/8.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/9.gif" alt=""/></a><a href="" class="dribbble-over"><strong>Playe Animation</strong><span class="comment"> Hey, here's the animation. Can't upload 800x600 px guys, cause of maximum size limitation. Hope you like it :)</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Tintins<img src="./img/avatar/9.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/10.png" alt=""/></a><a href="" class="dribbble-over"><strong>Basilica-of-Notre-Dame-de-Fourvière富维耶圣母院</strong><span class="comment"> Basilica-of-Notre-Dame-de-Fourvière富维耶圣母院 The personal exhibition-《AWE-Architecture is Awesome x100》/《AWE-建筑很有型x100》.The landmark building and fantastic architecture come from all over the world.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Michael Wong<img src="./img/avatar/10.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/11.gif" alt=""/></a><a href="" class="dribbble-over"><strong>BMO</strong><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Michael Wong<img src="./img/avatar/11.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/12.png" alt=""/></a><a href="" class="dribbble-over"><strong>Hail Hydra!</strong><span class="comment"> On this special day, here's my newest print available for Pre-Order on this day ONLY. The remains will be available on July 14th.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Marie Bergeron<img src="./img/avatar/12.gif" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/13.png" alt=""/></a><a href="" class="dribbble-over"><strong>BitGold Business Marketing Page</strong><span class="comment"> Snapshot of the BitGold Business Landing page that we made really quickly to showcase our invoice and checkout tools. Came out pretty good. It’s got a unique feel to it. Elements of this design have been incorporated into the ever evolving Goldmoney Brand which you will see more of soon.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Mike Busby<img src="./img/avatar/13.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/14.png" alt=""/></a><a href="" class="dribbble-over"><strong>Cheesy</strong><span class="comment"> Show some love press &quot;L&quot;</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">MBE<img src="./img/avatar/14.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/15.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Forefathers 5 Year Anniversary</strong><span class="comment"> Wow. 5 years. Holy shit. To say we are honored and humbled to be going strong with Forefathers for half a decade now would just be an understatement.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Forefathers™<img src="./img/avatar/15.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/16.png" alt=""/></a><a href="" class="dribbble-over"><strong>Squirrel town</strong><span class="comment"> for fun...</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Lars Lundberg<img src="./img/avatar/16.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/17.png" alt=""/></a><a href="" class="dribbble-over"><strong>New site is live!</strong><span class="comment"> www.kayako.com Creative Direction: @jessebc Illustrations: @Raksha @Art Amrit</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Abhimanyu Rana<img src="./img/avatar/17.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/18.png" alt=""/></a><a href="" class="dribbble-over"><strong>Cream cheese</strong><span class="comment"> Check out our new tee on sale: https://ricosquesos.threadless.com/designs/crazy-sausage</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Gustavo Zambelli<img src="./img/avatar/18.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/19.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Fourth Of July</strong><span class="comment"> Happy 4th of July everybody! Don't blow off any fingers!</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">EJ Hassenfratz<img src="./img/avatar/19.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/20.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Cream cheese</strong><span class="comment"> Check out our new tee on sale: https://ricosquesos.threadless.com/designs/crazy-sausage</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Gustavo Zambelli<img src="./img/avatar/20.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/21.gif" alt=""/></a><a href="" class="dribbble-over"><strong>S Shiftmode</strong><span class="comment"> S (Shiftmode) - Logo Design Concept</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Jeroen van Eerden<img src="./img/avatar/21.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/22.png" alt=""/></a><a href="" class="dribbble-over"><strong>Nude Pattern</strong><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Aleksandar Savić<img src="./img/avatar/22.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/23.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Orca</strong><span class="comment"> The full project can be seen here https://www.behance.net/gallery/38830187/Negative-yet-Positive-lll</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Bodea Daniel<img src="./img/avatar/23.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/24.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Portfolio Website</strong><span class="comment"> Here is the shot of the forth slide for brand new portfolio project.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Radius<img src="./img/avatar/24.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/25.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Ui Kit Blocks for Vkmix</strong><span class="comment"> Looking for a design company? We would love to hear about your needs. Contact us: http://www.flatata.com/en/order</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Flatstudio<img src="./img/avatar/25.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/26.png" alt=""/></a><a href="" class="dribbble-over"><strong></strong><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#"><img src="./img/avatar/26.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/27.png" alt=""/></a><a href="" class="dribbble-over"><strong>Clean Stack Icons</strong><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Kemal Sanli<img src="./img/avatar/27.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/28.gif" alt=""/></a><a href="" class="dribbble-over"><strong>Tamasha: 404 error page</strong><span class="comment"> an illustration for Tamasha.ir - a video sharing website like youtube - 404 not found error page. check a better version in attachment</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Saeed Tavoosi<img src="./img/avatar/28.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/29.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Red Sox Scores: July 3, 2016</strong><span class="comment"> The Red Sox gave the Angels a taste of their own medicine on Sunday afternoon, piling on seven runs in the fifth inning to take the lead and, ultimately, the victory.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#"> Dan Perrera<img src="./img/avatar/29.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/30.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Online Identity</strong><span class="comment"> An illustration from a series I'm working on for WorldPay.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Chris Bramford<img src="./img/avatar/30.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/31.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Pikmin Commission Crop</strong><span class="comment"> A crop of this super fun Pikmin commission I did a week or so ago! I love getting fun requests like this! I also did a screen recording so check out YouTube if you're keen to see a condensed version:</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Andrew Kolb<img src="./img/avatar/31.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/32.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>The Sunset</strong><span class="comment"> Quick 4-day trip to the coastline with a terrace view like this one can recharge the crap out of you....</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Type08 (Alen Pavlovic)<img src="./img/avatar/32.gif" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/33.gif" alt=""/></a><a href="" class="dribbble-over"><strong>Virtual Fitness Instructor App</strong><span class="comment"> Make short-term fitness program on the wearable device and the linkage of the selected Smart fitness equipment together to help complete your plan.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Daz_Qu<img src="./img/avatar/33.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/34.gif" alt=""/></a><a href="" class="dribbble-over"><strong>Whale</strong><span class="comment"> Logo every day) </span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Yuri Krasnoshchok<img src="./img/avatar/34.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/35.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Celebration</strong><span class="comment"> Big day for us over at Kayako. Finally we are live. There are still a few rough edges here and there, but we're working on them ^__^ </span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Raksha<img src="./img/avatar/35.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/36.gif" alt=""/></a><a href="" class="dribbble-over"><strong>GSG TAKEOVER: PRIDE</strong><span class="comment"> Catching up on my week-long stint as the daily render guest artist at Greyscalegorilla. http://instagram.com/allisonhouse</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Allison House<img src="./img/avatar/36.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/37.png" alt=""/></a><a href="" class="dribbble-over"><strong>🏠</strong><span class="comment"> This is the start of something new that I worked on last week. Looking forward to sharing more.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">James McDonald<img src="./img/avatar/37.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/38.gif" alt=""/></a><a href="" class="dribbble-over"><strong>Monkey Rocks</strong><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Evgeny Polukhin<img src="./img/avatar/38.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/39.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Adidas Ultra Boost</strong><span class="comment"> Just playin' around with my favorite pair of shoes. Hope you gonna like this :)</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Nikola Stojanovic<img src="./img/avatar/39.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/40.png" alt=""/></a><a href="" class="dribbble-over"><strong>Colorful Animals Vol2</strong><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Marius Naujokas<img src="./img/avatar/40.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/41.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Bed, Bath &amp; Car</strong><span class="comment"> Here are the icons from my previous shot in much higher quality. Click @2x to see a bigger preview.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">James McDonald<img src="./img/avatar/41.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/42.png" alt=""/></a><a href="" class="dribbble-over"><strong>File Transfer 2.0</strong><span class="comment"> This is just a personal preference on how I want to experience the We Transfer Mobile version (Concept)</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Ranjith Alingal<img src="./img/avatar/42.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/43.png" alt=""/></a><a href="" class="dribbble-over"><strong>hello dribble !</strong><span class="comment"> Hello Dribbble! Here's my first shot. A huge thanks to @Chris Cherry for invitation.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">zoey<img src="./img/avatar/43.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/44.png" alt=""/></a><a href="" class="dribbble-over"><strong>Summer</strong><span class="comment"> Summer vibes!</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Nina Magradze<img src="./img/avatar/44.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/45.png" alt=""/></a><a href="" class="dribbble-over"><strong>Forbes Island</strong><span class="comment"> Day 306/365</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Scott Tusk<img src="./img/avatar/45.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/46.png" alt=""/></a><a href="" class="dribbble-over"><strong>YOLO</strong><span class="comment"> Life moves pretty fast. If you don't stop and look around for a while, you could miss it.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">James Oconnell<img src="./img/avatar/46.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/47.png" alt=""/></a><a href="" class="dribbble-over"><strong>Book Cover</strong><span class="comment"> illustration book cover flat color medicine intestine gradient</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Zura Chavchanidze<img src="./img/avatar/47.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/48.png" alt=""/></a><a href="" class="dribbble-over"><strong>Lantern - Covers</strong><span class="comment"> Hello Dribbble :) Here is a screen of my graduation project I made with Jonas Deprund and some really cool developers.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Athanassios Tohme<img src="./img/avatar/48.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/49.png" alt=""/></a><a href="" class="dribbble-over"><strong>Apsis - Location App</strong><span class="comment"> I just released new Behance Case Study of sadly unreleased app, that I started working on about year ago, that I shared here before few times already.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="extra attach"><a title="This shot has attachments"><img src="./img/attach.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Michael Dolejs<img src="./img/avatar/49.png" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+                  <li class="group">
+                    <div class="dribbble">
+                      <div class="dribbble-shot">
+                        <div class="dribbble-img"><a href="" class="dribbble-link"><img src="./img/post/50.jpg" alt=""/></a><a href="" class="dribbble-over"><strong>Lantern - Covers</strong><span class="comment"> Hello Dribbble :) Here is a screen of my graduation project I made with Jonas Deprund and some really cool developers.</span><em class="time">July 05, 2016</em></a></div>
+                        <ul class="tools">
+                          <li class="extra share"><a href="" title="This shot is a rebound (reply) of another shot. View the original."><img src="./img/rebound.png" alt=""/></a></li>
+                          <li class="views"><i class="fa fa-eye"></i><span>2,498</span></li>
+                          <li class="cmt"><i class="fa fa-comment"></i><span>11</span></li>
+                          <li class="fav"><a href="" class="toggle-fav"><i class="fa fa-heart"></i></a><a href="" title="View fans of this shot">340</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <h2 class="attribution"><a href="#">Athanassios Tohme<img src="./img/avatar/50.jpg" alt="" class="attribution__avatar"/></a><a href="#" class="badge-link"><span class="badge badge-pro">Pro</span></a></h2>
+                  </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="footer-inner">
+        <div class="group">
+          <div class="footer-mod">
+            <div class="footer-logo"><a href=""><img src="./img/logo-hover.png" alt=""/></a></div>
+            <p class="logan">Show and tell for designers</p>
+            <p class="about">What are you working on? Dribbble is a community of designers sharing screenshots of their work, process, and projects.    </p>
+          </div>
+          <div class="footer-mod">
+            <ul class="extra-links">
+              <li><a href="">About</a></li>
+              <li><a href="">Help</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Privacy</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">Testimonials</a></li>
+              <li><a href="">Handbook</a></li>
+              <li><a href="">Brand</a></li>
+              <li><a href="">Advertise</a></li>
+              <li><a href="">API</a></li>
+              <li><a href="">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="footer-mod">
+            <h3><a href="">Jobs for Designers</a></h3>
+            <ul class="jobs-list">
+              <li class="group"><a href="" title="Visit the team's profile"><img src="./img/base.png" alt=""/></a><a href="">
+                  <p>Base</p><span>Senior Product Designers</span></a></li>
+              <li class="group"><a href="" title="Visit the team's profile"><img src="./img/fantasy.png" alt=""/></a><a href="">
+                  <p>Off the Grid</p><span>Graphic Designers</span></a></li>
+            </ul>
+          </div>
+          <div class="footer-mod last">
+            <div class="group thedeck"><a href=""><img src="./img/mapbox.jpg" alt=""/></a>
+              <div class="deck-content"><a href="">ADS VIA THE DECK</a>
+                <p>Create beautiful maps with <a href="">Mapbox.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h4 id="pixels"><strong>543,384,132,196</strong>
+          <p>pixels dribbbled</p>
+        </h4>
+        <p class="copyright">Copyright © 2009–2016 Dribbble LLC. All screenshots © their respective owners. Shipped from Salem, Mass. USA.</p>
+        <p class="follow"><a href=""><i class="fa fa-dribbble"></i></a><a href=""><i class="fa fa-twitter"></i></a><a href=""><i class="fa fa-facebook-official"></i></a><a href=""><i class="fa fa-instagram"></i></a><a href=""><i class="fa fa-globe"></i></a></p>
+      </div>
+    </footer>
+  </body>
+</html>

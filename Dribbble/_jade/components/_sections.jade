@@ -1,0 +1,770 @@
+include ../modules/_mixins
+-
+    var list= [
+    {
+        img: './img/post/1.jpg',
+        over: 'Hard days night',
+        comment: "",
+        time: 'about 13 hours ago',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/1.jpg',
+        author: "R A D I O P",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/2.png',
+        over: 'Fursan Travel',
+        comment: "New refreshing look approved by client for my friends @Balkan Brothers First really challenging project that ended up better than we expected :)",
+        time: 'about 13 hours ago',
+        share: "",
+        attach: "",
+        view: '3,886',
+        cmt: '9',
+        fav: '260',
+        avatar: './img/avatar/2.png',
+        author: "Charlie Isslander",
+        badge: 'Team'
+    },
+    {
+        img: './img/post/3.jpg',
+        over: 'Haters Gonna Hate',
+        comment: "Have a nice week! ;)",
+        time: 'about 13 hours ago',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/3.png',
+        author: "Dmitry Stolz",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/4.jpg',
+        over: 'Growlithe',
+        comment: "This loyal fire Pokémon comes bounding into our 20 year anniversary collection!",
+        time: 'about 13 hours ago',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/4.jpg',
+        author: "MUTI",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/5.png',
+        over: 'VROOM',
+        comment: "Custom type redesign for VROOM, which is a platform who buy and sell cars based in New York and operating in the US. We went for a simple yet effective type work since the name pretty much suggest where it is all about.",
+        time: 'about 13 hours ago',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/5.jpg',
+        author: "Paul von Excite",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/6.gif',
+        over: 'Submarine',
+        comment: "This little guy is exploring the ocean. Perhaps, he will find some treasures soon!",
+        time: 'about 13 hours ago',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/6.jpg',
+        author: "Dmitrij",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/7.png',
+        over: 'F***K U Dance',
+        comment: "This is what happen when you have 2 hours off and nothing better to do.",
+        time: 'about 13 hours ago',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/7.png',
+        author: "Emanuele Colombo",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/8.gif',
+        over: 'I Design With Code',
+        comment: "An SVG animation for my site. Inspired by the wonderfully playful Creogram Check out the live SVG on CodePen here",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/8.jpg',
+        author: "Chris Gannon",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/9.gif',
+        over: 'Playe Animation',
+        comment: "Hey, here's the animation. Can't upload 800x600 px guys, cause of maximum size limitation. Hope you like it :)",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/9.jpg',
+        author: "Tintins",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/10.png',
+        over: 'Basilica-of-Notre-Dame-de-Fourvière富维耶圣母院',
+        comment: "Basilica-of-Notre-Dame-de-Fourvière富维耶圣母院 The personal exhibition-《AWE-Architecture is Awesome x100》/《AWE-建筑很有型x100》.The landmark building and fantastic architecture come from all over the world.",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/10.png',
+        author: "Michael Wong",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/11.gif',
+        over: 'BMO',
+        comment: "",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/11.png',
+        author: "Michael Wong",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/12.png',
+        over: 'Hail Hydra!',
+        comment: "On this special day, here's my newest print available for Pre-Order on this day ONLY. The remains will be available on July 14th.",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/12.gif',
+        author: "Marie Bergeron",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/13.png',
+        over: 'BitGold Business Marketing Page',
+        comment: "Snapshot of the BitGold Business Landing page that we made really quickly to showcase our invoice and checkout tools. Came out pretty good. It’s got a unique feel to it. Elements of this design have been incorporated into the ever evolving Goldmoney Brand which you will see more of soon.",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/13.png',
+        author: "Mike Busby",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/14.png',
+        over: 'Cheesy',
+        comment: 'Show some love press "L"',
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/14.png',
+        author: "MBE",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/15.jpg',
+        over: 'Forefathers 5 Year Anniversary',
+        comment: "Wow. 5 years. Holy shit. To say we are honored and humbled to be going strong with Forefathers for half a decade now would just be an understatement.",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/15.jpg',
+        author: "Forefathers™",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/16.png',
+        over: 'Squirrel town',
+        comment: "for fun...",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/16.png',
+        author: "Lars Lundberg",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/17.png',
+        over: 'New site is live!',
+        comment: "www.kayako.com Creative Direction: @jessebc Illustrations: @Raksha @Art Amrit",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/17.png',
+        author: "Abhimanyu Rana",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/18.png',
+        over: 'Cream cheese',
+        comment: "Check out our new tee on sale: https://ricosquesos.threadless.com/designs/crazy-sausage",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/18.png',
+        author: "Gustavo Zambelli",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/19.jpg',
+        over: 'Fourth Of July',
+        comment: "Happy 4th of July everybody! Don't blow off any fingers!",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/19.jpg',
+        author: "EJ Hassenfratz",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/20.jpg',
+        over: 'Cream cheese',
+        comment: "Check out our new tee on sale: https://ricosquesos.threadless.com/designs/crazy-sausage",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/20.png',
+        author: "Gustavo Zambelli",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/21.gif',
+        over: 'S Shiftmode',
+        comment: "S (Shiftmode) - Logo Design Concept",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/21.png',
+        author: "Jeroen van Eerden",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/22.png',
+        over: 'Nude Pattern',
+        comment: "",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/22.png',
+        author: "Aleksandar Savić",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/23.jpg',
+        over: 'Orca',
+        comment: "The full project can be seen here https://www.behance.net/gallery/38830187/Negative-yet-Positive-lll",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/23.png',
+        author: "Bodea Daniel",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/24.jpg',
+        over: 'Portfolio Website',
+        comment: "Here is the shot of the forth slide for brand new portfolio project.",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/24.jpg',
+        author: "Radius",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/25.jpg',
+        over: 'Ui Kit Blocks for Vkmix',
+        comment: "Looking for a design company? We would love to hear about your needs. Contact us: http://www.flatata.com/en/order",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/25.png',
+        author: "Flatstudio",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/26.png',
+        over: '',
+        comment: "",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/26.jpg',
+        author: "",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/27.png',
+        over: 'Clean Stack Icons',
+        comment: "",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/27.png',
+        author: "Kemal Sanli",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/28.gif',
+        over: 'Tamasha: 404 error page',
+        comment: "an illustration for Tamasha.ir - a video sharing website like youtube - 404 not found error page. check a better version in attachment",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/28.png',
+        author: "Saeed Tavoosi",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/29.jpg',
+        over: 'Red Sox Scores: July 3, 2016',
+        comment: "The Red Sox gave the Angels a taste of their own medicine on Sunday afternoon, piling on seven runs in the fifth inning to take the lead and, ultimately, the victory.",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/29.jpg',
+        author: " Dan Perrera",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/30.jpg',
+        over: 'Online Identity',
+        comment: "An illustration from a series I'm working on for WorldPay.",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/30.jpg',
+        author: "Chris Bramford",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/31.jpg',
+        over: 'Pikmin Commission Crop',
+        comment: "A crop of this super fun Pikmin commission I did a week or so ago! I love getting fun requests like this! I also did a screen recording so check out YouTube if you're keen to see a condensed version:",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/31.png',
+        author: "Andrew Kolb",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/32.jpg',
+        over: 'The Sunset',
+        comment: "Quick 4-day trip to the coastline with a terrace view like this one can recharge the crap out of you....",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/32.gif',
+        author: "Type08 (Alen Pavlovic)",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/33.gif',
+        over: 'Virtual Fitness Instructor App',
+        comment: "Make short-term fitness program on the wearable device and the linkage of the selected Smart fitness equipment together to help complete your plan.",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/33.jpg',
+        author: "Daz_Qu",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/34.gif',
+        over: 'Whale',
+        comment: "Logo every day) ",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/34.jpg',
+        author: "Yuri Krasnoshchok",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/35.jpg',
+        over: 'Celebration',
+        comment: "Big day for us over at Kayako. Finally we are live. There are still a few rough edges here and there, but we're working on them ^__^ ",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/35.jpg',
+        author: "Raksha",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/36.gif',
+        over: 'GSG TAKEOVER: PRIDE',
+        comment: "Catching up on my week-long stint as the daily render guest artist at Greyscalegorilla. http://instagram.com/allisonhouse",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/36.jpg',
+        author: "Allison House",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/37.png',
+        over: '🏠',
+        comment: "This is the start of something new that I worked on last week. Looking forward to sharing more.",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/37.png',
+        author: "James McDonald",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/38.gif',
+        over: 'Monkey Rocks',
+        comment: "",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/38.jpg',
+        author: "Evgeny Polukhin",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/39.jpg',
+        over: 'Adidas Ultra Boost',
+        comment: "Just playin' around with my favorite pair of shoes. Hope you gonna like this :)",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/39.png',
+        author: "Nikola Stojanovic",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/40.png',
+        over: 'Colorful Animals Vol2',
+        comment: "",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/40.png',
+        author: "Marius Naujokas",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/41.jpg',
+        over: 'Bed, Bath & Car',
+        comment: "Here are the icons from my previous shot in much higher quality. Click @2x to see a bigger preview.",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/41.png',
+        author: "James McDonald",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/42.png',
+        over: 'File Transfer 2.0',
+        comment: "This is just a personal preference on how I want to experience the We Transfer Mobile version (Concept)",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/42.png',
+        author: "Ranjith Alingal",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/43.png',
+        over: 'hello dribble !',
+        comment: "Hello Dribbble! Here's my first shot. A huge thanks to @Chris Cherry for invitation.",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/43.png',
+        author: "zoey",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/44.png',
+        over: 'Summer',
+        comment: "Summer vibes!",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/44.png',
+        author: "Nina Magradze",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/45.png',
+        over: 'Forbes Island',
+        comment: "Day 306/365",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/45.jpg',
+        author: "Scott Tusk",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/46.png',
+        over: 'YOLO',
+        comment: "Life moves pretty fast. If you don't stop and look around for a while, you could miss it.",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/46.png',
+        author: "James Oconnell",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/47.png',
+        over: 'Book Cover',
+        comment: "illustration book cover flat color medicine intestine gradient",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/47.png',
+        author: "Zura Chavchanidze",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/48.png',
+        over: 'Lantern - Covers',
+        comment: "Hello Dribbble :) Here is a screen of my graduation project I made with Jonas Deprund and some really cool developers.",
+        time: 'July 05, 2016',
+        share: "",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/48.jpg',
+        author: "Athanassios Tohme",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/49.png',
+        over: 'Apsis - Location App',
+        comment: "I just released new Behance Case Study of sadly unreleased app, that I started working on about year ago, that I shared here before few times already.",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "1",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/49.png',
+        author: "Michael Dolejs",
+        badge: 'Pro'
+    },
+    {
+        img: './img/post/50.jpg',
+        over: 'Lantern - Covers',
+        comment: "Hello Dribbble :) Here is a screen of my graduation project I made with Jonas Deprund and some really cool developers.",
+        time: 'July 05, 2016',
+        share: "1",
+        attach: "",
+        view: '2,498',
+        cmt: '11',
+        fav: '340',
+        avatar: './img/avatar/50.jpg',
+        author: "Athanassios Tohme",
+        badge: 'Pro'
+    }]
+
+.wrap
+    .fulltabs
+        ul.shot-menu
+            li.shot-more
+                a(href="") Popular
+                ul.sub
+                    li
+                        a(href="") Recent
+                    li
+                        a(href="") Most Viewed
+                    li
+                        a(href="") Most Commented
+            li.shot-more
+                a(href="") Shots
+                ul.sub
+                    li
+                        a(href="") Debuts
+                    li
+                        a(href="") Team Shots
+                    li
+                        a(href="") Playoffs
+                    li
+                        a(href="") Rebounds
+                    li
+                        a(href="") Animated GIFs
+                    li
+                        a(href="") Shots with Attachments
+            li.shot-more
+                a(href="") Now
+                ul.sub
+                    li
+                        a(href="") This Past Week
+                    li
+                        a(href="") This Past Month
+                    li
+                        a(href="") This Past Year
+                    li
+                        a(href="") All Time
+        .screenshot-actions
+            span.action-grid
+            ul.actions-list
+                li.shot-display
+                    h3 Display Options
+                    ul.large-small
+                        li.small-with-meta.active(title="Small with info" rel='tipsy', data-tipsy-class='tipsy-alt', original-title='')
+                            a(href='#')
+                                svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', preserveaspectratio='xMidYMid', width='42', height='42', viewbox='0 0 72 72')
+                                    path(d='M48.992,53.0045 L23.009,53.0045 C21.358,53.0045 20.01,51.6595 20.01,50.0035 L20.01,21.9965 C20.01,20.3375 21.358,18.9955 23.009,18.9955 L48.992,18.9955 C50.649,18.9955 51.99,20.3375 51.99,21.9965 L51.99,50.0035 C51.99,51.6595 50.649,53.0045 48.992,53.0045 L48.992,53.0045 L48.992,53.0045 Z M27.989,47.9995 L43.989,47.9995 C45.094,47.9995 45.989,47.1045 45.989,45.9995 C45.989,44.8945 45.094,43.9995 43.989,43.9995 L27.989,43.9995 C26.884,43.9995 25.989,44.8945 25.989,45.9995 C25.989,47.1045 26.884,47.9995 27.989,47.9995 L27.989,47.9995 L27.989,47.9995 Z M45.993,24.9965 L26.008,24.9965 L26.008,39.0025 L45.993,39.0025 L45.993,24.9965 L45.993,24.9965 Z', fill='#333333')
+                        li.large-with-meta(title="Large with info" rel='tipsy', data-tipsy-class='tipsy-alt', original-title='')
+                            a(href='#')
+                                svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', preserveaspectratio='xMidYMid', width='42', height='42', viewbox='0 0 72 72')
+                                    path(d='M56.992,61.0045 L15.009,61.0045 C13.358,61.0045 12.01,59.6595 12.01,58.0035 L12.01,13.9965 C12.01,12.3375 13.358,10.9955 15.009,10.9955 L56.992,10.9955 C58.649,10.9955 59.99,12.3375 59.99,13.9965 L59.99,58.0035 C59.99,59.6595 58.649,61.0045 56.992,61.0045 L56.992,61.0045 Z M19.989,55.9995 L51.989,55.9995 C53.094,55.9995 53.989,55.1045 53.989,53.9995 C53.989,52.8945 53.094,51.9995 51.989,51.9995 L19.989,51.9995 C18.884,51.9995 17.989,52.8945 17.989,53.9995 C17.989,55.1045 18.884,55.9995 19.989,55.9995 L19.989,55.9995 Z M53.993,16.9965 L18.008,16.9965 L18.008,47.0025 L53.993,47.0025 L53.993,16.9965 L53.993,16.9965 Z', fill='#333333')
+                        li.small-without-meta(title="Small without info" rel='tipsy', data-tipsy-class='tipsy-alt', original-title='')
+                            a(href='#')
+                                svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', preserveaspectratio='xMidYMid', width='42', height='42', viewbox='0 0 72 72')
+                                    path(d='M48.992,49.0045 L23.009,49.0045 C21.358,49.0045 20.01,47.6595 20.01,46.0035 L20.01,25.9965 C20.01,24.3375 21.358,22.9955 23.009,22.9955 L48.992,22.9955 C50.649,22.9955 51.99,24.3375 51.99,25.9965 L51.99,46.0035 C51.99,47.6595 50.649,49.0045 48.992,49.0045 L48.992,49.0045 Z M45.993,28.9965 L26.008,28.9965 L26.008,43.0025 L45.993,43.0025 L45.993,28.9965 L45.993,28.9965 Z', fill='#333333')
+                        li.large-without-meta(title="Large without info" rel='tipsy', data-tipsy-class='tipsy-alt', original-title='')
+                            a(href='#')
+                                svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', preserveaspectratio='xMidYMid', width='42', height='42', viewbox='0 0 72 72')
+                                    path(d='M56.992,57.0045 L15.009,57.0045 C13.358,57.0045 12.01,55.6595 12.01,54.0035 L12.01,17.9965 C12.01,16.3375 13.358,14.9955 15.009,14.9955 L56.992,14.9955 C58.649,14.9955 59.99,16.3375 59.99,17.9965 L59.99,54.0035 C59.99,55.6595 58.649,57.0045 56.992,57.0045 L56.992,57.0045 Z M53.993,20.9965 L18.008,20.9965 L18.008,51.0025 L53.993,51.0025 L53.993,20.9965 L53.993,20.9965 Z', fill='#333333')
+    #wap-inner
+        #content
+            #main.main-full
+                ul.dribbbles
+                    +dribbble(list)
+                    

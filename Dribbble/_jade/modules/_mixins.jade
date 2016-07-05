@@ -1,0 +1,41 @@
+mixin dribbble(list)
+    each val in list
+        li.group
+            .dribbble
+                .dribbble-shot
+                    .dribbble-img
+                        a(href="").dribbble-link
+                            img(src="#{val.img}", alt="")
+                        a(href="").dribbble-over
+                            strong #{val.over}
+                            if val.comment
+                                span.comment  #{val.comment}
+                            em.time #{val.time}
+                    ul.tools
+                        if val.share
+                            li.extra.share
+                                a(href="" title="This shot is a rebound (reply) of another shot. View the original.")
+                                    img(src="./img/rebound.png", alt="")
+                        if val.attach           
+                            li.extra.attach
+                                a(title="This shot has attachments")
+                                    img(src="./img/attach.png", alt="")
+                        if val.view
+                            li.views
+                                i.fa.fa-eye
+                                span #{val.view}
+                        if val.cmt
+                            li.cmt
+                                i.fa.fa-comment
+                                span #{val.cmt}
+                        if val.fav
+                            li.fav
+                                a(href="").toggle-fav
+                                    i.fa.fa-heart
+                                a(href="" title="View fans of this shot") #{val.fav}
+            h2.attribution
+                a(href="#") #{val.author}
+                    img(src="#{val.avatar}", alt="").attribution__avatar
+                    
+                a(href="#").badge-link
+                    span.badge.badge-pro #{val.badge}

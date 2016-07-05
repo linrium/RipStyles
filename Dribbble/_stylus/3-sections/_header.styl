@@ -1,0 +1,207 @@
+.separate
+    margin-top: 4px
+    padding-top: 4px
+    border-top: 1px solid rgba(255,255,255,0.15)
+
+.gopro
+    a, a:hover
+        color: #6cc !important
+
+#t-home
+    display: none
+
+ #t-more .more-item
+    display: none !important
+
+.name
+    display: none
+
+.is-open
+    a:after
+        left: 20px
+        transform: rotate(180deg)
+    .more-item
+        display: block !important
+        text-align: center
+        color: white
+        font-weight: 500
+    .avatar
+        display: flex
+        justify-content: center
+    .tabs
+        display: block !important
+
+.nav-open
+    display: block !important
+
+#toggle-nav
+    position: absolute
+    height: 100%
+    width: 40px
+    top: 0
+    left: 0
+    display: none
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    span, span:after, span:before
+        content: ""
+        display: block
+        width: 20px
+        height: 3px
+        background: #989898
+    span:after
+        margin-top: 9px
+    span:before
+        margin-top: -6px
+
+header
+    height: 56px
+    background: #333
+    #header-inner
+        padding: 0 10px 0 30px
+        height: 100%
+        display: flex
+        justify-content: space-between
+        position: relative
+        #nav-wrapper
+            width: 100%
+            display: flex
+        #logo
+            width: 76px
+            margin-right: 20px
+            a
+                padding: 0
+                img
+                    width: 100%
+        .tabs
+            display: none
+            position: absolute
+            background: rgba(47,47,47,0.98)
+            padding-bottom: 10px
+            left: -5px
+            width: 180px
+            border-bottom-left-radius: 6px
+            border-bottom-right-radius: 6px
+            z-index: 10
+            li
+                a
+                    padding: 5px 15px
+                    font-size: 13px
+                    &:hover
+                        background: rgba(255,255,255,0.1)
+        .nav__center
+            display: flex
+            align-items: stretch
+            width: 100%
+            z-index: 99
+            li
+                position: relative
+                &:hover
+                    > a
+                        color: white
+                    ul
+                        display: block
+            #t-more
+                flex-grow: 2
+            #t-search
+                display: flex
+                align-items: center
+                padding: 0 10px
+                max-width: 190px
+                order: 2
+                #search
+                    position: relative
+                    i
+                        position: absolute
+                        top: 3px
+                        left: 5px
+                        color: #999
+                    input
+                        border: none
+                        padding: 5px 5px 5px 25px
+                        width: 100%
+                        border-radius: 4px
+                        outline: none
+            .avatar
+                img
+                    height: 18px
+                    width: 18px
+                    border-radius: 50%
+            a
+                display: flex
+                align-items: center
+                height: 100%
+                padding: 0 10px
+
+@media (max-width: 890px)
+    header
+        height: 40px
+        #header-inner
+            justify-content: center
+            padding: 0
+            position: relative
+            #toggle-nav
+                display: flex
+            #nav-wrapper
+                width: auto
+                #logo
+                    margin: 0
+                #nav
+                    display: none
+                    flex-direction: column
+                    position: absolute
+                    top: 40px
+                    left: 0
+                    width: 100%
+                    background: rgba(47,47,47,0.98)
+                    .more
+                        position: relative
+                        > a:after
+                            content: ''
+                            display: block
+                            height: 100%
+                            width: 9px
+                            top: 0
+                            right: 20px
+                            position: absolute
+                            background: url(../img/arrow-right.png) no-repeat center
+                            background-size: 9px 16px
+                    #t-shop, #t-more .bull
+                        display: none
+                    #t-home
+                        display: block
+                    #t-more .more-item
+                        display: block !important
+                    #t-search
+                        order: -1
+                        max-width: none
+                        padding: 0 15px 15px 15px
+                        #search
+                            width: 100%
+                            i
+                                top: 8px
+                            input
+                                padding-top: 10px
+                                padding-bottom: 10px
+                                width: @width
+                    .name
+                        margin-left: 15px
+                        display: inline
+                    li
+                        .tabs
+                            display: none
+                            width: 100%
+                            padding-bottom: 0
+                            border-radius: 0
+                            left: 0
+                            .separate
+                                margin-top: 0
+                                padding-top: 0
+                        a
+                            padding: 15px
+                            border-top: 1px solid rgba(255,255,255,0.15)
+
+@media (min-width: 891px)
+    .nav__center
+        display: flex !important
