@@ -7,8 +7,15 @@
     a, a:hover
         color: #6cc !important
 
+.nav-up {
+    margin-top: -56px
+}
+
 #t-home
     display: none
+
+#t-w
+    flex-grow: 2
 
  #t-more .more-item
     display: none !important
@@ -57,7 +64,13 @@
 
 header
     height: 56px
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 99
     background: #333
+    transition: all 0.3s ease
     #header-inner
         padding: 0 10px 0 30px
         height: 100%
@@ -102,8 +115,6 @@ header
                         color: white
                     ul
                         display: block
-            #t-more
-                flex-grow: 2
             #t-search
                 display: flex
                 align-items: center

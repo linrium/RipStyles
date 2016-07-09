@@ -7,11 +7,14 @@ $(function() {
         shownav();
         // active like nav
         fav();
-        // show more in nav
         more();
-
+        navdown();
         // fix menu responsive
-        setInterval(shotmenu);
+        setInterval(function() {
+            fixmenu();
+            displayresponsive();
+        }, 250);
+
     });
 
     var tooltips = function() {
@@ -69,6 +72,32 @@ $(function() {
         });
     };
 
+    // sai cmnr :)) khong biet lam
+    var displayresponsive = function() {
+        if ($(window).width() < 560) {
+            $('.small-without-meta').addClass('active');
+            if ($('.large-with-meta').hasClass('active')) {
+                $('.small-without-meta').removeClass('active');
+                $('.dribbbles').addClass('large-meta-active');
+            } else {
+                $('.dribbbles').removeClass('large-meta-active');
+            }
+        } else {
+            $('.large-with-meta').removeClass('active');
+            $('.small-without-meta').removeClass('active');
+            $('.small-with-meta').addClass('active');
+        }
+    };
+
+    var changesmall = function() {
+        var dr = $('.dribbbles');
+        if ($(window).width() < 560) {
+            dr.addClass('hide-meta');
+        } else {
+            dr.removeClass('hide-meta');
+        }
+    };
+
     var shownav = function() {
         $('#toggle-nav').on('click', function() {
             var nav = $('#nav');
@@ -97,6 +126,7 @@ $(function() {
 
     var more = function() {
         $('.more').click(function() {
+            $('#t-home').css('display', 'none', 'important');
             if ($(window).width() <= 890) {
                 if ($(this).hasClass('is-open')) {
                     $(this).siblings().show();
@@ -114,9 +144,44 @@ $(function() {
         });
     };
 
+    var navdown = function() {
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event) {
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        });
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+            if (Math.abs(lastScrollTop - st) <= delta) {
+                return;
+            }
+
+            if (st > lastScrollTop && st > navbarHeight) {
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                if (st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            lastScrollTop = st;
+        }
+    };
+
     var fixmenu = function() {
         if ($(window).width() > 890) {
-            $('.wrap').css('margin-top', '0');
+            $('.wrap').css('margin-top', '56px');
             if ($('#nav').hasClass('nav-open')) {
                 $('#nav').removeClass('nav-open');
             }
@@ -130,8 +195,8 @@ $(function() {
                 $('#t-home').css('display', 'none', 'important');
             }
         }
-        if ($(window).width() <= 890) {
-            $('#t-home').css('display', 'block', 'important');
+        if ($(window).width() < 890) {
+            $('.wrap').css('margin-top', '40px');
         }
     };
 });
