@@ -1,21 +1,44 @@
 $(function() {
+
+
     $(document).ready(function() {
         // show tooltips
         tooltips();
         hoverlogo();
         displayoptions();
         shownav();
+        // heightnav();
         // active like nav
         fav();
         more();
         navdown();
-        // fix menu responsive
-        setInterval(function() {
-            fixmenu();
-            displayresponsive();
-        }, 250);
+        // debounce displayresponsive
+        debounceFunc();
+        $(window).on('resize', debounceFunc);
 
     });
+
+    var debounceFunc = debounce(function() {
+        fixmenu();
+        displayresponsive();
+    }, 250);
+
+
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+            var context = this,
+                args = arguments;
+            var later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    }
 
     var tooltips = function() {
         $('.share a,.attach a,.fav a:nth-child(2), .group a').tooltipster({
@@ -35,6 +58,39 @@ $(function() {
                 x.attr('src', 'img/logo.png');
             }
         });
+    };
+
+    var heightnav = function() {
+        var wh = $(window).height();
+        var nav = $('#nav').height();
+        if (nav > 400) {
+            $('#nav').css({
+                'height': '400px',
+                'overflow-x': 'scroll'
+            });
+        }
+        $('.more').each(function() {
+            var tabs = $(this).find('.tabs');
+            var previousCss = tabs.attr('style');
+            tabs.css({
+                position: 'absolute !important',
+                visibility: 'hidden !important',
+                display: 'block !important',
+            });
+            var h = tabs.height();
+            console.log(h);
+            tabs.attr('style', previousCss ? previousCss : "");
+            if (h > wh) {
+                $(this).find('.tabs').css({
+                    'height': '400px',
+                    'overflow-x': 'scroll'
+                });
+            } else {
+                $(this).parent().css('height', (h + 49) + 'px', 'important');
+            }
+            return false;
+        });
+
     };
 
     var displayoptions = function() {
@@ -73,19 +129,18 @@ $(function() {
     };
 
     // sai cmnr :)) khong biet lam
-    var displayresponsive = function() {
+    var displayresponsive = function(e) {
+        var dr = $('.dribbbles');
         if ($(window).width() < 560) {
+            $('.small-without-meta').siblings().removeClass('active');
             $('.small-without-meta').addClass('active');
-            if ($('.large-with-meta').hasClass('active')) {
-                $('.small-without-meta').removeClass('active');
-                $('.dribbbles').addClass('large-meta-active');
-            } else {
-                $('.dribbbles').removeClass('large-meta-active');
-            }
+            dr.addClass('hide-meta');
+            dr.removeClass('large-meta');
         } else {
-            $('.large-with-meta').removeClass('active');
-            $('.small-without-meta').removeClass('active');
+            $('.small-with-meta').siblings().removeClass('active');
             $('.small-with-meta').addClass('active');
+            dr.removeClass('hide-meta');
+            dr.removeClass('large-meta');
         }
     };
 
@@ -104,10 +159,10 @@ $(function() {
             var wrap = $('.wrap');
             if (nav.hasClass('nav-open')) {
                 nav.removeClass('nav-open');
-                wrap.css('margin-top', '0');
+                wrap.css('margin-top', '40px');
             } else {
                 nav.addClass('nav-open');
-                wrap.css('margin-top', $('#nav').height() + 'px');
+                // wrap.css('margin-top', $('#nav').height() + 'px');
             }
         });
     };
@@ -131,12 +186,12 @@ $(function() {
                 if ($(this).hasClass('is-open')) {
                     $(this).siblings().show();
                     $(this).removeClass('is-open');
-                    $('.wrap').css('margin-top', $('#nav').height() + 'px');
+                    // $('.wrap').css('margin-top', $('#nav').height() + 'px');
                 } else {
                     $(this).siblings().hide();
                     $(this).addClass('is-open');
-                    var x = $(this).height() + $(this).find('.tabs').height();
-                    $('.wrap').css('margin-top', x + 'px');
+                    // var x = $(this).height() + $(this).find('.tabs').height();
+                    // $('.wrap').css('margin-top', x + 'px');
                 }
                 return false;
             }
