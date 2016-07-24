@@ -1,13 +1,11 @@
 $(function() {
-
-
     $(document).ready(function() {
         // show tooltips
         tooltips();
         hoverlogo();
         displayoptions();
         shownav();
-        // heightnav();
+        heightnav();
         // active like nav
         fav();
         more();
@@ -22,7 +20,6 @@ $(function() {
         fixmenu();
         displayresponsive();
     }, 250);
-
 
     function debounce(func, wait, immediate) {
         var timeout;
@@ -69,27 +66,6 @@ $(function() {
                 'overflow-x': 'scroll'
             });
         }
-        $('.more').each(function() {
-            var tabs = $(this).find('.tabs');
-            var previousCss = tabs.attr('style');
-            tabs.css({
-                position: 'absolute !important',
-                visibility: 'hidden !important',
-                display: 'block !important',
-            });
-            var h = tabs.height();
-            console.log(h);
-            tabs.attr('style', previousCss ? previousCss : "");
-            if (h > wh) {
-                $(this).find('.tabs').css({
-                    'height': '400px',
-                    'overflow-x': 'scroll'
-                });
-            } else {
-                $(this).parent().css('height', (h + 49) + 'px', 'important');
-            }
-            return false;
-        });
 
     };
 

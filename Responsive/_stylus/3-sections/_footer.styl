@@ -1,0 +1,35 @@
+footer
+    background: url(../img/hero-bg.jpg) no-repeat center center
+    background-size: cover
+
+    .lockup
+        padding: 50px 30px
+        clearfix()
+
+        .logo
+            height: 50px
+            width: 50px
+            float: left
+            margin-right: 30px
+            svg
+                height: 50px
+                width: 50px
+            path
+                fill: rgba(0,0,0,0.5)
+
+        .content-wrap
+            float: left
+
+            .copyright
+                margin: 10px 0 0 0
+                text-transform: uppercase
+                font-size: 12px
+                color: rgba(0,0,0,0.8)
+
+            a
+                @extend $small-bold
+                color: rgba(0, 0, 0, 0.7)
+                display: inline-block
+                margin-right: 35px
+                &:hover
+                    color: rgba(0, 0, 0, 0.5)

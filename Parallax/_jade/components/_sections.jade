@@ -1,0 +1,72 @@
+mixin clothing(name)
+    if name
+        h1 #{name}
+    else
+        h1 Clothing Store
+    hr
+    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore sit quibusdam, doloremque eius quod perferendis odio! Similique, repellat, distinctio quos placeat nostrum saepe inventore illum ducimus consectetur perspiciatis, sequi accusamus.
+    hr
+
+section.content
+    article
+        +clothing('Unique Style')
+        .clothes-pics
+            .row.img-row
+                figure.columns.four
+                    img(src="/img/model1.jpg", alt="")
+                    figcaption BlackBird Sweater - <strong>$135</strong>
+                figure.columns.four
+                    img(src="/img/model2.jpg", alt="")
+                    figcaption BlackBird Trousers - <strong>$135</strong>
+                figure.columns.four
+                    img(src="/img/model3.jpg", alt="")
+                    figcaption BlackBird Jacket - <strong>$135</strong>
+            .row.img-row
+                figure.columns.four
+                    img(src="/img/model1.jpg", alt="")
+                    figcaption BlackBird Sweater - <strong>$135</strong>
+                figure.columns.four
+                    img(src="/img/model2.jpg", alt="")
+                    figcaption BlackBird Trousers - <strong>$135</strong>
+                figure.columns.four
+                    img(src="/img/model3.jpg", alt="")
+                    figcaption BlackBird Jacket - <strong>$135</strong>
+            .row.img-row
+                figure.columns.four
+                    img(src="/img/model1.jpg", alt="")
+                    figcaption BlackBird Sweater - <strong>$135</strong>
+                figure.columns.four
+                    img(src="/img/model2.jpg", alt="")
+                    figcaption BlackBird Trousers - <strong>$135</strong>
+                figure.columns.four
+                    img(src="/img/model3.jpg", alt="")
+                    figcaption BlackBird Jacket - <strong>$135</strong>
+    
+        +clothing()
+        .large-window
+            .window-tint
+                .promo-text Fall Suits
+                    strong <span>from</span> $99
+                    a(href="").window-cta Shop Now
+                    
+        +clothing('Rich History')
+        .blog-posts.row
+            .post.columns.four.post-1
+                h5 Post Title
+                img(src='/img/posts/one.jpg')
+                p  Lorem ipsum dolor sit amet, consectetur.
+                p: a.button(href="") Read More
+            
+            .post.columns.four.post-2
+                h5 Post Title
+                img(src='/img/posts/two.jpg')
+                p  Lorem ipsum dolor sit amet.
+                p: a.button(href="") Read More
+            
+            .post.columns.four.post-3
+                h5 Post Title
+                img(src='/img/posts/three.jpg')
+                p  Lorem ipsum dolor sit amet, consectetur.
+                p: a.button(href="") Read More
+    
+    //- div(style="height: 2000px")
