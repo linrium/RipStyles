@@ -1,0 +1,99 @@
+.alt-section
+    background: $bg-color
+
+.work-belt
+    width: 200%
+    position: relative
+    left: 0%
+    transition: all 0.5s ease
+    clearfix()
+
+.work-wrap, .thumb-wrap
+    width: 50%
+    float: left
+
+.thumb-container
+    max-width: 960px
+    margin: 0 auto
+    padding-bottom: 100px
+    // clearfix()
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    .thumb-unit
+        width: 25%
+        position: relative
+        padding-top: 150px
+        // display: block
+        // float: left
+        background-size: cover
+        // overflow: hidden
+        perspective: 300
+        for $i in (1..8)
+            bg($i)
+
+        @media screen and (max-width: 760px)
+            width: 50%
+            padding-top: 28%
+
+        .thumb-overlay
+            z(absolute,0%,0,0,0)
+            height: 100%
+            background: transparentify($accent,0.8)
+            transition: all 1s ease
+            text-align: center
+            transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+            opacity: 0
+            transition: all 0.2s ease-in
+
+            strong
+                font-weight: 500
+                font-size: 24px
+                line-height: 1.2
+                text-transform: uppercase
+                color: white
+                display: block
+                padding: 20px
+
+        &:hover
+            z-index: 2
+            .thumb-overlay
+                @extend $animation
+                opacity: 1
+
+.work-container
+    max-width: 600px
+    margin: 0 auto
+    position: relative
+    h4
+        color: $accent
+        font-weight: 500
+        font-size: 24px
+        line-height: 1.2
+        text-transform: uppercase
+    img
+        max-width: 100%
+        margin: 20px 0
+    .work-return
+        width: 40px
+        height: 40px
+        cursor: pointer
+        opacity: 0.5
+        position: absolute
+        top: -4px
+        left: -50px
+
+        path
+            fill: rgba(0,0,0,.4)
+
+        &:hover
+            opacity: 1
+
+@media screen and (max-width: 740px)
+    .work-container
+        margin-bottom: 10px
+        h4
+            margin-left: 60px
+        .work-return
+            left: 0

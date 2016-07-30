@@ -1,7 +1,7 @@
 header
-    height: 450px
     background: url(../img/hero-bg.jpg) no-repeat center center
     background-size: cover
+    padding-bottom: 50px
 
     .logo
         height: 50px
@@ -45,3 +45,18 @@ header
         letter-spacing: 0.05em
         color: white
         @extend $small-bold
+
+@media (max-width: 640px)
+    header
+        .logo
+            float: none
+            margin: 0 auto
+            padding-top: 20px
+        nav
+            float: none
+            text-align: center
+            a
+                font-size: 12px
+        h1
+            padding-top: 0
+            margin-top: 50px

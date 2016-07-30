@@ -7,3 +7,14 @@ clearfix()
         clear: both
     .group
         zoom: 1
+
+z(pos, top, right, bottom, left)
+    position: pos
+    top: top
+    right: right
+    bottom: bottom
+    left: left
+
+bg(n)
+    &:nth-child({n})
+        background: url('../img/work/proj-'+ n +'/thumb.jpg') center center no-repeat

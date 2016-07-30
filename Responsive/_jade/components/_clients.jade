@@ -1,0 +1,41 @@
+mixin thumnunit(avatar,name,title)
+    .client-unit
+        .client-face
+            img(src="img/clients/#{avatar}", alt="")
+            strong.client-name #{name}
+            .client-title #{title}
+        .client-content
+            .client-quote-mark
+                include icons/icon-quote-mark.html
+            p <strong>In pellentesque faucibus vestibulum.</strong> Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere.
+            
+mixin client-logo(nth)
+    img(src="/img/clients/#{nth}.png", alt="").client-logo
+
+section.section-clients
+    h3#clients Clients
+    .client-controls
+        .client-control-prev
+            include icons/icon-prev.html
+        .client-control-next
+            include icons/icon-next.html
+            
+    .clients-mobile-nav
+        span
+        span
+        span
+        span    
+    
+    .clients-belt
+        +thumnunit('face-aaroni.jpg','Scott Summers','Director of Design, OnToText Ind.')
+        +thumnunit('face-atariboy.jpg','Hank McCoy','Eater of Salad, Antartica Int.')
+        +thumnunit('face-jackiesaik.jpg','Stacy Lang','Social Media Girl, Quebec Int.')
+        +thumnunit('face-teleject.jpg','Cleatus Cassidy','VP of Helmut, Lorem Sorem LLC.')
+        
+
+                
+    .clients-logos
+        +client-logo('logo1')
+        +client-logo('logo2')
+        +client-logo('logo3')
+        +client-logo('logo4')

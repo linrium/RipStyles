@@ -1,0 +1,28 @@
+mixin thumb(title, num)
+    a(href="" data-folder="proj-#{num}").thumb-unit
+        .thumb-overlay
+            strong #{title}
+            //- .zoom-icon
+            //-     include icons/icon-zoom.html
+
+section.alt-section.section-work
+    h3#work Work
+    .work-belt
+        .thumb-wrap
+            .thumb-container
+                +thumb('Typo International Design Talks Stuff',1)
+                +thumb('City In Website Concept',2)
+                +thumb('Crispy Icons',3)
+                +thumb('Flat Mobile UI/UX Concept',4)
+                +thumb('Fresh It Up',5)
+                +thumb('Timeline Page',6)
+                +thumb('Weather Dashboard',7)
+                +thumb('Stripes & Co',8)
+        
+        .work-wrap
+            .work-container
+                .work-return
+                    include icons/icon-back.html
+                h4.project-title Typo International Design Talks
+                .project-load
+                    

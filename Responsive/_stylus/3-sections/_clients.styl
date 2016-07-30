@@ -1,0 +1,145 @@
+.section-clients
+    position: relative
+.clients-belt
+    width: 100%
+    position: relative
+
+    .client-unit
+        max-width: 700px
+        margin: 0 0 50px -375px
+        display: none
+        position: relative
+        top: 0
+        left: 50%
+        @extend $animation
+
+        &.active-client
+            display: flex
+            @extend $animation
+
+        .client-face
+            min-width: 300px
+            text-align: center
+
+            img
+                max-width: 100px
+                border-radius: 50%
+
+            .client-name
+                display: block
+                text-transform: uppercase
+                font-weight: 600
+                letter-spacing: 1px
+                margin: 10px 0 10px
+
+            .client-title
+                font-style: normal
+                font-size: 12px
+                color: #999
+
+        .client-content
+            font-size: 16px
+            line-height: 35px
+            font-weight: 300
+            position: relative
+
+            strong
+                font-weight: bold
+
+.clients-logos
+    position: relative
+    max-width: 750px
+    display: flex
+    margin: 50px auto 100px
+    align-items: flex-end
+    justify-content: space-around
+
+    .client-logo
+        cursor: pointer
+        margin: 0 10px
+        border-bottom: 4px solid transparent
+        opacity: 0.5
+        padding-bottom: 20px
+
+        // for $i in (1..4)
+        //     &:nth-child({$i})
+        //         background: url('../img/clients/logo'+$i +'.png') center no-repeat
+
+        &.active-client
+            border-bottom: 4px solid $accent
+            opacity: 1
+
+.client-quote-mark
+    position: absolute
+    top: -20px
+    left: -20px
+    height: 60px
+    width: 60px
+    z-index: -1
+    opacity: 0.3
+    path
+        fill: $accent
+
+.client-controls
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    > div
+        height: 40px
+        width: 40px
+        margin-top: -20px
+
+    .client-control-next
+    .client-control-prev
+        position: absolute
+        cursor: pointer
+        z-index: 99
+
+    .client-control-next
+        top: 50%
+        right: 10px
+
+    .client-control-prev
+        top: 50%
+        left: 10px
+
+.clients-mobile-nav
+    text-align: center
+    margin-bottom: 30px
+    display: none
+    span
+        cursor: pointer
+        display: inline-block
+        width: 16px
+        height: 16px
+        border-radius: 50%
+        border: 2px solid $bg-color
+        margin: 0px 10px
+
+        &.active-client
+            border-color: $accent
+
+@media screen and (max-width: 750px)
+    .client-controls
+        display: none
+    .clients-belt
+        .client-unit.active-client
+            display: block
+            position: relative
+            margin-left: 0
+            left: auto
+            .client-face
+                margin-bottom: 20px
+            .client-content
+                padding: 0 30px
+                max-width: 400px
+                margin: 0 auto
+            .client-quote-mark
+                left: 15px
+    .clients-logos
+        flex-wrap: wrap
+
+    .clients-mobile-nav
+        display: block

@@ -1,0 +1,48 @@
+.section-contact
+    text-align: center
+
+.social-links
+    max-width: 700px
+    margin: 0 auto 50px
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+    a
+        display: block
+        background: $accent
+        height: 50px
+        width: 50px
+        text-align: center
+        line-height: @height
+        color: white
+        border-radius: 50%
+        font-size: 28px
+        transition: all 0.3s ease
+
+        &:hover
+            transform: scale(1.2)
+.bar
+    width: 250px
+    height: 0
+    border-top: 4px solid $accent
+    margin: 0 auto 50px
+
+.biglink
+    display: inline-block
+    font-size: 72px
+    padding-bottom: 100px
+    color: $accent
+    opacity: 1
+    transition: all 0.3s ease
+
+    &:hover
+        opacity: 0.5
+
+@media screen and (max-width: 660px)
+    .biglink
+        font-size: 50px
+
+@media screen and (max-width: 450px)
+    .biglink
+        font-size: 30px
