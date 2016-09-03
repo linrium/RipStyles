@@ -1,0 +1,128 @@
+@import "modules/all"
+@import "mixins"
+
+h_height= 61px
+h_fz = 14px
+h_social = 24px
+h_form_h= 18px
+h_form_w= 372px
+
+list_social= (color_steam color_fb color_twitter color_youtube color_twitch)
+
+header
+    height h_height
+    background color_second
+    border-bottom 6px solid color_primary !important
+    #logo
+        height h_height
+        line-height 80px
+        float left
+        margin-right 50px
+        a
+            height (h_height / 2)
+            display inline-block
+            img
+                height @height
+
+    .navbar
+        clearfix()
+        float left
+        ul
+            li
+                float left
+                position relative
+                hover_color()
+                +hover()
+                    .subnav
+                        display block
+                a
+                    float left
+                    height h_height
+                    text-transform capitalize
+                    line-height @height
+                    padding 0 10px
+                    font-size h_fz
+
+                .subnav
+                    top h_height
+                    width 200px
+                    position absolute
+                    display none
+                    background color_second
+                    li
+                        display block
+                        height 46px
+                        a
+                            height 44px
+                            line-height @height
+
+    .social
+        clearfix()
+        float right
+        ul
+            li
+                float left
+                height h_height
+                padding 0 5px
+                line-height @height
+                list_item(list_social)
+                &:nth-child(1) a
+                    color black
+                a
+                    display inline-block
+                    text-align center
+                    line-height: h_social
+                    border-radius 50px
+                    height h_social
+                    width h_social
+    #search
+        clearfix()
+        float right
+        position relative
+        border-bottom 6px solid color_primary !important
+        color text_color_1
+        +hover()
+            cursor pointer
+            form
+                display block
+        #search_icon
+            height h_height
+            li
+                float left
+                line-height h_height
+                text-transform capitalize
+                margin-left 8px
+                font-size h_fz
+        form
+            +hover()
+                display block
+            top h_height + 5px
+            right 0
+            position absolute
+            display none
+            padding 16px 18px
+            background search_bg
+            border 2px solid #3b5998
+            input
+                outline none
+                border 1px solid #ddd
+                width h_form_w
+                font-size 16px
+                padding 13px 54px 11px 12px
+            button
+                position absolute
+                background #333
+                height 44px
+                width 44px
+                border none
+                top 16px
+                right 18px
+                i
+                    color text_color_1
+                    font-size 20px
+
+.sub
+    position relative
+    +after_item()
+        right -6px
+        top (h_height / 2) - 4px

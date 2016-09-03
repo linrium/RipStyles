@@ -1,0 +1,25 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "description": "This is my task runner. Compile jade, stylus, minify, ...",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.6",
+    "gulp-connect": "^4.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-stylus": "^2.4.0",
+    "nib": "^1.1.0"
+  },
+  "devDependencies": {
+    
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "lynkxyz",
+  "license": "ISC"
+}

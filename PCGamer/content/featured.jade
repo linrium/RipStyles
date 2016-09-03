@@ -1,0 +1,114 @@
+-
+    var list_img=[
+    {
+        class: 'thumb large',
+        cate: 'so many es',
+        href: '#',
+        img_link: 'f1.jpg',
+        title: 'Every game at E3 2016 and its PC outlook'
+    },
+    {
+        class: 'thumb small',
+        cate: 'news',
+        href: '#',
+        img_link: 'f2.jpg',
+        title: "Kojima's Death Stranding will be an action game, sort of"
+    },
+    {
+        class: 'thumb small',
+        cate: 'link to the pc',
+        href: '#',
+        img_link: 'f3.jpg',
+        title: 'The Legend of Zelda: Breath of the Wild is the most PC Nintendo game ever'
+    },
+    {
+        class: 'thumb small',
+        cate: 'interview',
+        href: '#',
+        img_link: 'f4.jpg',
+        title: 'Phil Spencer on the next Halo, Lionhead, and Windows 10 gaming'
+    },
+    {
+        class: 'thumb small',
+        cate: 'nope',
+        href: '#',
+        img_link: 'f5.jpg',
+        title: 'I walked across a charred baby pit in Outlast 2 and didn’t like it much'
+    }
+    ]
+    
+    var list_right_img=[
+    {
+        class: 'rf-list',
+        href: '#',
+        img_link: 'rf1.jpg',
+        title: 'Killing Floor 2 is free on Steam this weekend'
+    },
+    {
+        class: 'rf-list',
+        href: '#',
+        img_link: 'rf2.jpg',
+        title: 'The Surge, a sci-fi Souls-like, gets a new trailer'
+    },
+    {
+        class: 'rf-list',
+        href: '#',
+        img_link: 'rf3.jpg',
+        title: 'Phil Spencer says Microsoft "will ship games on Steam again"'
+    }
+    ]
+    
+    var list_right_bottom= [
+    {
+        link: '#',
+        content: 'Allison Road was canceled after devs split with publisher Team 17'
+    },
+    {
+        link: '#',
+        content: "Gabe Newell on VR exclusives: They're bad for everyone"
+    },
+    {
+        link: '#',
+        content: "Revised Xbox One controller taps Bluetooth to work with PCs"
+    },
+    {
+        link: '#',
+        content: 'Pascal pushes down pricing on GeForce GTX 980 Ti, 980, and 970 graphics cards'
+    },
+    {
+        link: '#',
+        content: "Kojima's Death Stranding will be an action game, sort of"
+    },
+    {
+        link: '#',
+        content: 'Farming Simulator 17 releasing at the end of this year'
+    },
+    {
+        link: '#',
+        content: 'Halo Wars 2 will get a PC beta "closer to launch"'
+    },
+    {
+        link: '#',
+        content: "Here are 15 minutes of relaxing, bone-smashing Steep footage"
+    },
+    {
+        link: '#',
+        content: "F1 2016 out August 19; here's some footage"
+    },
+    {
+        link: '#',
+        content: "Rare's Sea of Thieves gets a release window"
+    }
+    ]
+
+.featured
+    .featured-left
+        +list_img(list_img)
+    .featured-right
+        .featured-right-top
+            .fr-title
+                h3 news stream
+            +list_img(list_right_img)
+        .featured-right-bottom
+            +list_item(list_right_bottom)
+            a.viewmore(href='#') more news

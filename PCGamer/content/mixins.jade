@@ -1,0 +1,31 @@
+mixin img_item(href, img_link, alt='img')
+    a(href=href)
+        img(src='img/'+img_link alt=alt)
+
+mixin li(val)
+    li(class!=attributes.class)
+        a(href=val.link class=val.class)= val.content
+        ul.subnav
+            if val.sub != null
+                each sval in val.sub
+                    li
+                        a(href=sval.link class=sval.class)= sval.content
+
+mixin list_item(list)
+    ul
+        each val in list
+            if val.sub != null
+                +li(val)(class='sub')
+            else
+                +li(val)
+                
+mixin list_img(list)
+    ul
+        each val in list
+            li(class= val.class)
+                if val.cate != null
+                    span= val.cate
+                +img_item(val.href,val.img_link,val.alt)
+                h2
+                    a(href='#')= val.title
+                

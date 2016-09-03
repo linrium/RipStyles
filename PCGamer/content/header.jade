@@ -1,0 +1,86 @@
+include mixins
+
+-
+    var list_nav= [
+    {
+        link: '#',
+        content: 'news'
+    },
+    {
+        link: '#',
+        content: 'reviews'
+    },
+    {
+        link: '#',
+        content: 'hardware'
+    },
+    {
+        link: '#',
+        content: 'pro'
+    },
+    {
+        link: '#',
+        content: 'best of'
+    },
+    {
+        link: '#',
+        content: 'more',
+        sub: [
+        {
+            link: '#',
+            content: 'magazine'    
+        },
+        {
+            link: '#',
+            content: 'meet the team'    
+        }
+        ]
+    }
+    ]
+    
+    var list_social= [
+    {
+        link: '#',
+        content: '',
+        class: 'fa fa-steam'
+    },
+    {
+        link: '#',
+        content: '',
+        class: 'fa fa-facebook'
+    },
+    {
+        link: '#',
+        content: '',
+        class: 'fa fa-twitter'
+    },
+    {
+        link: '#',
+        content: '',
+        class: 'fa fa-youtube'
+    },
+    {
+        link: '#',
+        content: '',
+        class: 'fa fa-twitch'
+    }
+    ]
+
+header
+    .container
+        #logo
+            +img_item('#','logo.png','logo')
+        nav.navbar
+            +list_item(list_nav)
+        #search
+            ul#search_icon
+                li search
+                li
+                    i.fa.fa-search
+            form
+                input(type='search' placeholder='Search PC Gamer')
+                button(type='submit')
+                    i.fa.fa-search
+        .social
+            +list_item(list_social)
+        

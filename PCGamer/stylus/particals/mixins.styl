@@ -1,0 +1,33 @@
+clearfix()
+    &:after
+    &:before
+        content: ''
+        display: table
+    &:after
+        clear both
+
+hover_color()
+    &:hover
+        > a
+            color color_primary
+
+
+hover()
+    &:hover
+        {block}
+
+list_item(list)
+    for val in (0...5)
+        &:nth-child({val+1}) a
+            background list[val]
+
+after_item()
+    &:after
+        content ''
+        display block
+        height 0
+        width 0
+        border 6px solid transparent
+        border-top-color text_color_1 !important
+        position absolute
+        {block}

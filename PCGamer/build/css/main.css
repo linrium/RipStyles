@@ -1,0 +1,360 @@
+body {
+  background: #ededed;
+  font-family: Arial !important;
+}
+.container {
+  width: 970px;
+  margin: 0 auto;
+}
+.container:after,
+.container:before {
+  content: '';
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+a {
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #dc191b;
+}
+#main img {
+  width: 100%;
+}
+#main {
+  margin-top: 50px;
+  border-top: 1px solid #ccc;
+}
+.content {
+  width: 922px;
+  margin: 0 24px;
+  padding-top: 30px;
+}
+.content .featured .featured-left {
+  width: 610px;
+  float: left;
+}
+.content .featured .featured-left:after,
+.content .featured .featured-left:before {
+  content: '';
+  display: table;
+}
+.content .featured .featured-left:after {
+  clear: both;
+}
+.content .featured .featured-right {
+  width: 297px;
+  float: right;
+}
+.thumb {
+  float: left;
+  margin: 0 0 15px 15px;
+  position: relative;
+}
+.thumb span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #dc191b;
+  padding: 8.5px 9.5px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+}
+.thumb h2 a {
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #0f1618;
+  font-size: 28px;
+}
+.large {
+  margin-left: 0;
+}
+.small {
+  width: 297px;
+  height: 276px;
+  overflow: hidden;
+}
+.small:nth-child(2n) {
+  margin-left: 0 !important;
+}
+.small h2 a {
+  font-size: 18px;
+  height: 90px;
+  line-height: 25px;
+}
+.fr-title {
+  height: 44px;
+  background: #dc191b;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 44px;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 12px;
+}
+.fr-title:after {
+  content: '';
+ {
+    bottom: -11px;
+    border-top-color: #dc191b !important;
+    left: 140px;
+  }
+  display: ;
+  height: 0;
+  width: 0;
+  border: 6px solid transparent;
+  border-top-color: #fff !important;
+  position: absolute;
+  bottom: -11px;
+  border-top-color: #dc191b !important;
+  left: 140px;
+}
+.rf-list {
+  float: left;
+  width: 297px;
+  padding: 10px 0;
+  border-bottom: 1px dotted #999;
+}
+.rf-list a {
+  display: block;
+  float: left;
+  width: 100px;
+  margin-right: 20px;
+}
+.rf-list h2:hover > a {
+  color: #dc191b;
+}
+.rf-list h2 a {
+  color: #333;
+  font-weight: bold;
+  width: 50%;
+  line-height: 18px;
+}
+.featured-right-bottom {
+  position: relative;
+  float: left;
+  height: 628px;
+}
+.featured-right-bottom li {
+  padding: 8px 0;
+}
+.featured-right-bottom li:hover > a {
+  color: #dc191b;
+}
+.featured-right-bottom li a {
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.viewmore {
+  position: absolute;
+  color: #dc191b;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  background: #fff;
+  padding: 17px 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+header {
+  height: 61px;
+  background: #0f1618;
+  border-bottom: 6px solid #dc191b !important;
+}
+header #logo {
+  height: 61px;
+  line-height: 80px;
+  float: left;
+  margin-right: 50px;
+}
+header #logo a {
+  height: 30.5px;
+  display: inline-block;
+}
+header #logo a img {
+  height: 30.5px;
+}
+header .navbar {
+  float: left;
+}
+header .navbar:after,
+header .navbar:before {
+  content: '';
+  display: table;
+}
+header .navbar:after {
+  clear: both;
+}
+header .navbar ul li {
+  float: left;
+  position: relative;
+}
+header .navbar ul li:hover > a {
+  color: #dc191b;
+}
+header .navbar ul li:hover .subnav {
+  display: block;
+}
+header .navbar ul li a {
+  float: left;
+  height: 61px;
+  text-transform: capitalize;
+  line-height: 61px;
+  padding: 0 10px;
+  font-size: 14px;
+}
+header .navbar ul li .subnav {
+  top: 61px;
+  width: 200px;
+  position: absolute;
+  display: none;
+  background: #0f1618;
+}
+header .navbar ul li .subnav li {
+  display: block;
+  height: 46px;
+}
+header .navbar ul li .subnav li a {
+  height: 44px;
+  line-height: 44px;
+}
+header .social {
+  float: right;
+}
+header .social:after,
+header .social:before {
+  content: '';
+  display: table;
+}
+header .social:after {
+  clear: both;
+}
+header .social ul li {
+  float: left;
+  height: 61px;
+  padding: 0 5px;
+  line-height: 61px;
+}
+header .social ul li:nth-child(1) a {
+  background: #fff;
+}
+header .social ul li:nth-child(2) a {
+  background: #3b5998;
+}
+header .social ul li:nth-child(3) a {
+  background: #4099ff;
+}
+header .social ul li:nth-child(4) a {
+  background: #cd201f;
+}
+header .social ul li:nth-child(5) a {
+  background: #6441a5;
+}
+header .social ul li:nth-child(1) a {
+  color: #000;
+}
+header .social ul li a {
+  display: inline-block;
+  text-align: center;
+  line-height: 24px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  height: 24px;
+  width: 24px;
+}
+header #search {
+  float: right;
+  position: relative;
+  border-bottom: 6px solid #dc191b !important;
+  color: #fff;
+}
+header #search:after,
+header #search:before {
+  content: '';
+  display: table;
+}
+header #search:after {
+  clear: both;
+}
+header #search:hover {
+  cursor: pointer;
+}
+header #search:hover form {
+  display: block;
+}
+header #search #search_icon {
+  height: 61px;
+}
+header #search #search_icon li {
+  float: left;
+  line-height: 61px;
+  text-transform: capitalize;
+  margin-left: 8px;
+  font-size: 14px;
+}
+header #search form {
+  top: 66px;
+  right: 0;
+  position: absolute;
+  display: none;
+  padding: 16px 18px;
+  background: #fff;
+  border: 2px solid #3b5998;
+}
+header #search form:hover {
+  display: block;
+}
+header #search form input {
+  outline: none;
+  border: 1px solid #ddd;
+  width: 372px;
+  font-size: 16px;
+  padding: 13px 54px 11px 12px;
+}
+header #search form button {
+  position: absolute;
+  background: #333;
+  height: 44px;
+  width: 44px;
+  border: none;
+  top: 16px;
+  right: 18px;
+}
+header #search form button i {
+  color: #fff;
+  font-size: 20px;
+}
+.sub {
+  position: relative;
+}
+.sub:after {
+  content: '';
+ {
+    right: -6px;
+    top: 26.5px;
+  }
+  display: ;
+  height: 0;
+  width: 0;
+  border: 6px solid transparent;
+  border-top-color: #fff !important;
+  position: absolute;
+  right: -6px;
+  top: 26.5px;
+}

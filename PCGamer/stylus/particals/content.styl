@@ -1,0 +1,116 @@
+@import "modules/all"
+@import "mixins"
+
+#main
+    margin-top 50px
+    border-top 1px solid #ccc
+
+.content
+    width 922px
+    margin 0 24px
+    padding-top 30px
+    .featured
+        .featured-left
+            width 610px
+            float left
+            clearfix()
+        .featured-right
+            width 297px
+            float right
+
+.thumb
+    float left
+    margin 0 0 15px 15px
+    position relative
+    span
+        position absolute
+        top 0
+        left 0
+        background color_primary
+        padding 8.5px 9.5px
+        text-transform uppercase
+        font-size 13px
+        color text_color_1
+        cursor pointer
+    h2
+        a
+            padding 10px 20px
+            position absolute
+            bottom 0
+            left 0
+            right 0
+            background color_second
+            font-size 28px
+
+.large
+    margin-left 0
+
+.small
+    width 297px
+    height 276px
+    overflow hidden
+    &:nth-child(2n)
+        margin-left 0 !important
+    h2
+        a
+            font-size 18px
+            height 90px
+            line-height 25px
+
+.fr-title
+    height 44px
+    background color_primary
+    color text_color_1
+    text-transform uppercase
+    line-height @height
+    padding-left 20px
+    position relative
+    margin-bottom 12px
+    +after_item()
+        bottom -11px
+        border-top-color color_primary !important
+        left 140px
+
+.rf-list
+    float left
+    width 297px
+    padding 10px 0
+    border-bottom 1px dotted #999
+    a
+        display block
+        float left
+        width 100px
+        margin-right 20px
+    h2
+        hover_color()
+        a
+            color text_color_2
+            font-weight bold
+            width 50%
+            line-height 18px
+
+.featured-right-bottom
+    position relative
+    float left
+    height 628px
+    li
+        padding 8px 0
+        hover_color()
+        a
+            color text_color_2
+            font-weight 600
+            font-size 14px
+            line-height 20px
+
+.viewmore
+    position absolute
+    color color_primary
+    text-transform uppercase
+    font-size 14px
+    font-weight bold
+    background #fff
+    padding 17px 0
+    left 0
+    right 0
+    bottom 0
+    text-align center
